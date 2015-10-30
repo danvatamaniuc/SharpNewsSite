@@ -1,0 +1,10 @@
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\NewsSiteTests.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\NewsSiteTests.pdb
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\NewsSite.exe
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\NewsSite.pdb
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\obj\Debug\NewsSiteTests.csprojResolveAssemblyReference.cache
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\obj\Debug\NewsSiteTests.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\obj\Debug\NewsSiteTests.pdb
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\MyData.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSiteTests\bin\Debug\MyData.pdb

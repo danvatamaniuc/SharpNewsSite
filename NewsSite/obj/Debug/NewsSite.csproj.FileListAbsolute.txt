@@ -1,0 +1,8 @@
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\bin\Debug\NewsSite.exe.config
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\bin\Debug\NewsSite.exe
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\bin\Debug\NewsSite.pdb
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\obj\Debug\NewsSite.csprojResolveAssemblyReference.cache
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\obj\Debug\NewsSite.exe
+c:\users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\obj\Debug\NewsSite.pdb
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\bin\Debug\MyData.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\NewsSite\bin\Debug\MyData.pdb

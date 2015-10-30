@@ -1,0 +1,5 @@
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\MyData\bin\Debug\MyData.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\MyData\bin\Debug\MyData.pdb
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\MyData\obj\Debug\MyData.csprojResolveAssemblyReference.cache
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\MyData\obj\Debug\MyData.dll
+C:\Users\1\documents\visual studio 2015\Projects\NewsSite\MyData\obj\Debug\MyData.pdb
