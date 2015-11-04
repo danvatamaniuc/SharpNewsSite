@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NewsSite.main.utils;
+using MyData.utils;
 using NewsSite.main.domain;
 
 namespace NewsSite.main.repository

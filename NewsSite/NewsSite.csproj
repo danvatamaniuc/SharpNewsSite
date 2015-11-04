@@ -57,7 +57,6 @@
     <Compile Include="main\repository\GenericRepository.cs" />
     <Compile Include="main\repository\ArticleRepo.cs" />
     <Compile Include="main\repository\UserRepo.cs" />
-    <Compile Include="main\utils\Constants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -69,6 +68,10 @@
       <Project>{f5af4ecd-1bcb-451c-ace9-486c6b4854ab}</Project>
       <Name>MyData</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="main\utils\" />
+    <Folder Include="resources\files\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

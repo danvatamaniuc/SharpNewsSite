@@ -6,9 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyData.utils;
 using NewsSite.main.domain;
 using NewsSite.main.domain.validators;
-using NewsSite.main.utils;
 
 namespace NewsSite.main.repository.Tests
 {
@@ -55,6 +55,8 @@ namespace NewsSite.main.repository.Tests
             Author authorResult = (Author) authors[0];
             Article articleResult = (Article) articles[0];
 
+            _userRepository.SetXMLFilename("test.xml");
+            _userRepository.SaveAllToXML();
 
 //            Assert.AreEqual(Constants.StringTest, userResult.Username);
 //            Assert.AreEqual(Constants.StringTest, authorResult.Name);

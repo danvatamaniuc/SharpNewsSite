@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyData.utils;
 using NewsSite.main.domain;
 using NewsSite.main.domain.validators;
 using NewsSite.main.repository;
-using NewsSite.main.utils;
 
 namespace NewsSite.main.manager.Tests
 {
