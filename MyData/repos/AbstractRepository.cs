@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
+using System.Reflection;
 using System.Xml;
 using MyData.domain;
 using MyData.utils;
@@ -17,11 +18,14 @@ namespace MyData.repos
         private Validator<E> validator;
 
         private String storageFile;
-        
+
+        private Logger logger;
 
         protected AbstractRepository()
         {
             LastId = 0;
+
+//            logger = new Logger();
 
             //define the XML filename
             storageFile = Constants.ResourceFilesPath;
@@ -102,9 +106,85 @@ namespace MyData.repos
 
             writer.Flush();
             writer.Close();
+
+//            logger.LogWarning("All saved","SaveAllToXML");
         }
 
-//      reflection methods
+        public void LoadAllFromXML()
+        {
+            //instantiate a reader
+            XmlReader reader = XmlReader.Create(storageFile);
+
+            E element = (E) Activator.CreateInstance(GetTypeForGenericE());
+            PropertyInfo property;
+
+            //get generic class and type
+            String className = GetNameForGenericE();
+            Type classType = GetTypeForGenericE();
+
+            //while the reader can read
+            while (reader.Read())
+            {
+
+                //depending on the node type, we switch to other things
+                //a switch is nice here if we decide to deal with more
+                //than Element and EndElement
+                switch (reader.NodeType)
+                {
+                    //in case we find an element
+                    case XmlNodeType.Element:
+
+                        String readerName = reader.Name;
+
+                        //create a new element to be added to
+                        //when it passes an object node with
+                        //the class name
+                        if (readerName == className)
+                        {
+                            element = (E) Activator.CreateInstance(classType);
+                        }
+                        else
+                        {
+                            //get the property read from the element via reflection
+                            property = classType.GetProperty(readerName);
+
+                            //if the property is valid
+                            //get the value, convert it to proper type
+                            //and store it into the element
+                            if (property != null)
+                            {
+
+                                String rawValue= reader.ReadString();
+
+                                object value = Convert.ChangeType(rawValue, property.PropertyType);
+
+                                if (property.CanWrite) property.SetValue(element, value);
+                            }
+                        }
+
+                        break;
+
+                    case XmlNodeType.EndElement:
+                        //if we finished reading the element
+                        //we add it to the repo
+
+                        if (reader.Name == className)
+                        {
+                            entities.Add(element);
+                        }
+                        
+                        break;
+
+                } //end switch 
+                      
+            } //end reader while
+
+            reader.Close();
+
+//            logger.LogWarning("All loaded", "LoadAllFromXML");
+        }
+
+        //      reflection methods
 
         private Type GetTypeForGenericE()
         {

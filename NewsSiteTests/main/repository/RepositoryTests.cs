@@ -58,6 +58,12 @@ namespace NewsSite.main.repository.Tests
             _userRepository.SetXMLFilename("test.xml");
             _userRepository.SaveAllToXML();
 
+            UserRepo second = new UserRepo();
+            second.SetXMLFilename("test.xml");
+            second.LoadAllFromXML();
+
+            second.SetXMLFilename("w");
+
 //            Assert.AreEqual(Constants.StringTest, userResult.Username);
 //            Assert.AreEqual(Constants.StringTest, authorResult.Name);
 //            Assert.AreEqual(Constants.StringTest, articleResult.Title);

@@ -13,6 +13,10 @@ namespace NewsSite.main.domain
 
         private int id;
 
+        public Author()
+        {
+        }
+
         public Author(string name, int age)
         {
             this.name = name;

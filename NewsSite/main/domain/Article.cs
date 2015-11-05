@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace NewsSite.main.domain
 {
+
     public class Article
     {
         private int     id;
         private String  title;
         private String  content;
+
+        public Article()
+        {
+        }
 
         public Article(string title, string content)
         {

@@ -11,6 +11,10 @@ namespace NewsSite.main.domain
         private String username;
         private int id;
 
+        public User()
+        {
+        }
+
         public User(string username)
         {
             this.username = username;
